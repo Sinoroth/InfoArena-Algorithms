@@ -39,9 +39,10 @@ int main()
                     //if j(the energy level we're testing for) is higher than the energy level of the generator, we determine the most cost efficient method of producing it
                     if(j>energy[i])
                     {
-                    /*Store the minimum between the current value and the cost of the current generator + the total cost of all the generators
+                    /*
+                      Store the minimum between the current value and the cost of the current generator + the total cost of all the generators
                       that were used to get to the energy level equal to the difference between j and the energy produced by this generator
-                     */
+                    */
                     ansArr[i][j] = min(ansArr[i][j],cost[i] + ansArr[i-1][j-energy[i]]);
                     }
                     else
