@@ -1,0 +1,29 @@
+Gigel a ajuns administrator la o centrala termo-electrica. Intr-o zi a avut loc o cadere de tensiune si astfel centrala este la pamant. Gigel trebuie sa o repuna in functiune. Stiind ce energie produce fiecare generator cat si costul punerii in functiune el trebuie sa gasesca o solutie de cost minim, pentru a produce o cantitate de energie egala sau mai mare cu cea necesara repornirii centralei.
+
+Cerinta
+Ajutati-l pe Gigel sa gaseasca solutia ceruta !
+
+Date de Intrare
+Fisierul de intrare energii.in are urmatorul format :
+G - numarul de generatoare
+W - cantitatea de energie necesara repornirii centralei
+EGi CGi - urmatoarele G linii contin catitatea de energie produsa de generator si costul necesar producerii energiei, separate printr-un spatiu (1 ≤ i ≤ G)
+
+Date de Iesire
+Fisierul de iesire energii.out are urmatorul format :
+Cmin - costul minim necesar repornirii centralei sau -1 daca nu este suficienta energie pentru repornire
+
+Restrictii si precizari
+1 < G < 1001
+1 < W < 5001
+1 < EGi,CGi < 10001
+Solutia este unica
+
+Exemplu:
+
+energii.in	               energii.out
+3                          9
+8
+2 4
+2 3
+8 9
