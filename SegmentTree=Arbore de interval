@@ -2,7 +2,9 @@
 
 using namespace std;
 
+//Finds the maximum
 void option_m(int,int,int);
+//Creates the tree
 void option_c(int,int,int);
 
 const int MAX = 100001*4+66;
