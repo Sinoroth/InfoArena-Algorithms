@@ -32,7 +32,7 @@ void init(int &N,int &M)
 {
   f>>N>>M;
 
-  int i,x,y,l;
+  int i,source,dest,weight;
 
   dist[1] = 0;
   nrOfTimes[1]=1;
@@ -41,8 +41,8 @@ void init(int &N,int &M)
 
   for(i = 1; i <= M; ++i)
     {
-        f>>x>>y>>l;
-        srDest[x].push_back(std::make_pair(y,l));
+        f>>sorce>>dest>>weight;
+        srDest[source].push_back(std::make_pair(dest,weight));
     }
 }
 
