@@ -1,0 +1,21 @@
+void printMaxActivities(Activitiy arr[], int n)
+{
+    // Sorteaza dupa activitatea de final
+    sort(arr, arr+n, activityCompare);
+  
+    // Incepi cu prima activitate
+    int i = 0;
+ 
+    for (int j = 1; j < n; j++)
+    {
+      /*
+      Daca activitatea curenta are un inceput mai mare decat finalul celeilalte activitati, o alegem si trecem mai departe
+      */
+      if (arr[j].start >= arr[i].finish)
+      {
+          cout << "(" << arr[j].start << ", "
+              << arr[j].finish << "), ";
+          i = j;
+      }
+    }
+}
